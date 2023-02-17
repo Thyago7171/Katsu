@@ -3,23 +3,33 @@ from time import sleep
 
 
 def lenght():
-    pass
+    global tam_linha
+    tam_linha = int(caixa_01.get())
+    play()
 
 
 def step():
-    pass
+    global passo
+    passo = int(caixa_02.get())
+    play()
 
 
 def background():
-    pass
-
-
-def speed():
-    pass
+    global fundo
+    fundo = caixa_03.get()
+    play()
 
 
 def char():
-    pass
+    global caractere
+    caractere = caixa_04.get()
+    play()
+
+
+def speed():
+    global tempo
+    tempo = int(caixa_05.get()) * 0.05
+    play()
 
 
 def play():
@@ -60,18 +70,18 @@ tempo = 0.05  # define a velocidade com a qual o desenho se move
 # --------------------------------
 # WIDGETS
 
-caixa_01 = Entry(janela)
-caixa_02 = Entry(janela)
-caixa_03 = Entry(janela)
-caixa_04 = Entry(janela)
-caixa_05 = Entry(janela)
+caixa_01 = Entry(janela)  # adicionar valor padrão "20"
+caixa_02 = Entry(janela)  # adicionar valor padrão "7"
+caixa_03 = Entry(janela)  # adicionar valor padrão "0"
+caixa_04 = Entry(janela)  # adicionar valor padrão "1"
+caixa_05 = Entry(janela)  # adicionar valor padrão "1"
 
 
 botao_01 = Button(janela, text="Alterar a largura do quadro", command=lenght)
 botao_02 = Button(janela, text="Alterar a pincelada", command=step)
 botao_03 = Button(janela, text="Alterar a aparência do quadro", command=background)
 botao_04 = Button(janela, text="Alterar a tinta", command=char)
-botao_05 = Button(janela, text="Alterar a velocidade da obra", command=speed)  # tempo = 1 / speed
+botao_05 = Button(janela, text="Alterar a velocidade da obra", command=speed)  # speed = tempo * 0.05
 botao_06 = Button(janela, text="Pintar", command=play)
 botao_07 = Button(janela, text="Limpar o quadro", command=clean)
 
