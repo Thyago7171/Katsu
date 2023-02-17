@@ -23,11 +23,11 @@ def char():
 
 
 def play():
-    tam_linha = 20  # define o tamanho de cada linha do desenho
-    passo = 7  # define quanto o pincel deve se deslocar entre as aparições
-    fundo = '0'  # define o caracter que representará o fundo do quadro
-    caractere = '1'  # define o caracter que represetará a tinta do pincel
-    tempo = 0.05  # define a velocidade com a qual o desenho se move
+    global tam_linha
+    global passo
+    global fundo
+    global caractere
+    global tempo
 
     regra = passo
     while True:
@@ -47,6 +47,15 @@ def clean():
 
 janela = Tk()  # abre a janela
 janela.title("KATSU")  # define o título da janela
+
+# --------------------------------
+# VARIÁVEIS GLOBAIS
+
+tam_linha = 20  # define o tamanho de cada linha do desenho
+passo = 7  # define quanto o pincel deve se deslocar entre as aparições
+fundo = '0'  # define o caracter que representará o fundo do quadro
+caractere = '1'  # define o caracter que represetará a tinta do pincel
+tempo = 0.05  # define a velocidade com a qual o desenho se move
 
 # --------------------------------
 # WIDGETS
