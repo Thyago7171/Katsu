@@ -73,11 +73,17 @@ tempo = 0.05  # define a velocidade com a qual o desenho se move
 # WIDGETS
 
 caixa_01 = Entry(janela)  # adicionar valor padrão "20"
+caixa_01.insert(END, "20")
 caixa_02 = Entry(janela)  # adicionar valor padrão "100"
+caixa_02.insert(END, "100")
 caixa_03 = Entry(janela)  # adicionar valor padrão "7"
+caixa_03.insert(END, "7")
 caixa_04 = Entry(janela)  # adicionar valor padrão "0"
+caixa_04.insert(END, "0")
 caixa_05 = Entry(janela)  # adicionar valor padrão "1"
+caixa_05.insert(END, "1")
 caixa_06 = Entry(janela)  # adicionar valor padrão "1"
+caixa_06.insert(END, "1")
 
 
 botao_01 = Button(janela, text="Alterar a largura do quadro", command=lenght)
