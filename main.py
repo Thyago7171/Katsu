@@ -1,4 +1,5 @@
 from tkinter import *
+import os
 from time import sleep
 
 
@@ -53,7 +54,7 @@ def play():
 
 
 def clean():
-    pass
+    os.system('cls')
 
 
 janela = Tk()  # abre a janela
