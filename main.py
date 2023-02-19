@@ -65,7 +65,7 @@ janela.title("KATSU")  # define o título da janela
 
 tam_linha = 20  # define o tamanho de cada linha do desenho
 quant_linha = 100  # define a quantidade de linhas do desenho
-passo = 7  # define quanto o pincel deve se deslocar entre as aparições
+passo = 21  # define quanto o pincel deve se deslocar entre as aparições
 fundo = '0'  # define o caracter que representará o fundo do quadro
 caractere = '1'  # define o caracter que represetará a tinta do pincel
 tempo = 0.05  # define a velocidade com a qual o desenho se move
