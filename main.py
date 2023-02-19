@@ -29,7 +29,7 @@ def char():
 
 def speed():
     global tempo
-    tempo = int(caixa_06.get()) * 0.05
+    tempo = 0.05 / float(caixa_06.get())
 
 
 def play():
