@@ -59,6 +59,7 @@ def clean():
 
 janela = Tk()  # abre a janela
 janela.title("KATSU")  # define o título da janela
+janela.config(background="#2f3d4c")  # define o título da janela
 
 # --------------------------------
 # VARIÁVEIS GLOBAIS
@@ -87,14 +88,22 @@ caixa_06 = Entry(janela)  # adicionar valor padrão "1"
 caixa_06.insert(END, "1")
 
 
-botao_01 = Button(janela, text="Alterar a largura do quadro", command=lenght)
-botao_02 = Button(janela, text="Alterar a altura do quadro", command=height)
-botao_03 = Button(janela, text="Alterar a pincelada", command=step)
-botao_04 = Button(janela, text="Alterar a aparência do quadro", command=background)
-botao_05 = Button(janela, text="Alterar a tinta", command=char)
-botao_06 = Button(janela, text="Alterar a velocidade da obra", command=speed)  # speed = tempo * 0.05
-botao_07 = Button(janela, text="Pintar", command=play)
-botao_08 = Button(janela, text="Limpar o quadro", command=clean)
+botao_01 = Button(janela, text="Alterar a largura do quadro", command=lenght,
+                  bg="#f5d68f")
+botao_02 = Button(janela, text="Alterar a altura do quadro", command=height,
+                  bg="#f5d68f")
+botao_03 = Button(janela, text="Alterar a pincelada", command=step,
+                  bg="#f5d68f")
+botao_04 = Button(janela, text="Alterar a aparência do quadro", command=background,
+                  bg="#f5d68f")
+botao_05 = Button(janela, text="Alterar a tinta", command=char,
+                  bg="#f5d68f")
+botao_06 = Button(janela, text="Alterar a velocidade da obra", command=speed,
+                  bg="#f5d68f")  # speed = tempo * 0.05
+botao_07 = Button(janela, text="Pintar", command=play,
+                  bg="#f9ac34")
+botao_08 = Button(janela, text="Limpar o quadro", command=clean,
+                  bg="#f9ac34")
 
 # --------------------------------
 # Layout
