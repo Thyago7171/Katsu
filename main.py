@@ -65,13 +65,21 @@ def clean():
     os.system('cls')
 
 
+# Corrige o bug de relacionado ao caminho relativo do iconbitmap
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+
 janela = Tk()  # abre a janela
 janela.title("KATSU")  # define o título da janela
 janela.config(background="#2f3d4c")  # define o título da janela
 janela.resizable(False, False)  # define o tamanho da janela como invariável
-
-icon = PhotoImage(file="design/icone/ideias_sem_fundo/bug_sem_fundo_invertido.png")
-janela.iconphoto(False, icon)  # define o ícone da janela
+janela.wm_iconbitmap(default=resource_path("bug_invertido.ico"))  # define o ícone de exibição na janela
 
 # --------------------------------
 # VARIÁVEIS GLOBAIS
