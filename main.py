@@ -68,6 +68,7 @@ def clean():
 janela = Tk()  # abre a janela
 janela.title("KATSU")  # define o título da janela
 janela.config(background="#2f3d4c")  # define o título da janela
+janela.resizable(False, False)  # define o tamanho da janela como invariável
 
 icon = PhotoImage(file="design/icone/ideias_sem_fundo/bug_sem_fundo_invertido.png")
 janela.iconphoto(False, icon)  # define o ícone da janela
