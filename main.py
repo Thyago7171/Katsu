@@ -68,6 +68,7 @@ def clean():
 janela = Tk()  # abre a janela
 janela.title("KATSU")  # define o título da janela
 janela.config(background="#2f3d4c")  # define o título da janela
+janela.resizable(False, False)  # define o tamanho da janela como invariável
 
 # --------------------------------
 # VARIÁVEIS GLOBAIS
@@ -87,7 +88,7 @@ caixa_01.insert(END, "20")
 caixa_02 = Entry(janela)
 caixa_02.insert(END, "100")
 caixa_03 = Entry(janela)
-caixa_03.insert(END, "7")
+caixa_03.insert(END, "21")
 caixa_04 = Entry(janela)
 caixa_04.insert(END, "0")
 caixa_05 = Entry(janela)
